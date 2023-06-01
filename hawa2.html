@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Motorcycle Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:rgb(243, 243, 243);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        
+        .motorcycle-image {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: auto;
+            animation: motorcycleZoom 2s infinite alternate;
+        }
+        
+        @keyframes motorcycleZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        
+        p {
+            color: #666666;
+        }
+        
+        h2 {
+            color: #333333;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li:before {
+            content: "•";
+            color: #333333;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .gallery img {
+            margin: 5px;
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Motorcycle</h1>
+        <img src="motorcycle.jpg"  class="motorcycle-image">
+        <p>Welcome to my motorcycle page! Here you can find information about my favorite motorcycle.</p>
+        <h2>MY MOTORCYCLE SPECS</h2>
+        <ul>
+            <li>Make: Yamaha</li>
+            <li>Model: YZF-R6</li>
+            <li>Year: 2021</li>
+            <li>Color: Red</li>
+        </ul>
+        <h2>Description</h2>
+        <p>The Yamaha YZF-R6 is a high-performance sport motorcycle with an aerodynamic design. It is ideal for speed and adrenaline enthusiasts.</p>
+        
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="photo1.jpg" >
+            <img src="photo2.jpg" >
+            <img src="photo3.jpg" >
+        </div>
+        <button>  <a href="hawa3.html">NEXT PAGE =></a></button>
+    </div>
+</body>
+</html>
+
